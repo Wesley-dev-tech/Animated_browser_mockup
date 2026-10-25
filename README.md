@@ -7,7 +7,7 @@ A responsive browser mockup featuring a CSS-animated cursor and a scrolling scre
 - HTML for the browser frame and animation control.
 - SVG for the simplified screen illustration and cursor.
 - CSS keyframes for the cursor movement, click effect and scrolling animation.
-- CSS custom properties for the dark, purple and turquoise colour scheme.
+- CSS custom properties for a dark and a light colour scheme, matching the warm copper palette of my portfolio.
 - Bootstrap 5.3.8 and Flexbox utilities for alignment.
 
 ## Features
@@ -16,6 +16,7 @@ A responsive browser mockup featuring a CSS-animated cursor and a scrolling scre
 - A simulated cursor click followed by a scrolling page preview.
 - A six-second animation loop.
 - A checkbox to turn the animation on or off.
+- A checkbox to switch between the dark and light theme.
 - A scalable SVG illustration that fits smaller screens.
 - Support for the system's reduced-motion preference.
 - No JavaScript.
@@ -26,7 +27,7 @@ Download the files and open `index.html` in a browser. Keep `style.css` in the s
 
 ## Project Structure
 
-- `index.html`: the browser frame, SVG illustration and animation checkbox.
+- `index.html`: the browser frame, SVG illustration and the animation and theme checkboxes.
 - `style.css`: colours, layout, keyframes and reduced-motion support.
 - `README.md`: project documentation.
 

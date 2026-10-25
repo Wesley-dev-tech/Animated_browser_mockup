@@ -1,13 +1,36 @@
-/* Kleuren */
+/* Kleuren, overgenomen uit mijn portfolio.
+   Donker: warme bijna-zwarte tinten, gebroken witte tekst en een koperkleurig accent.
+   Coolors-palet: https://coolors.co/161513-1f1d1a-ece7dd-a39d91-d4895f */
 :root {
-    --primary-color: #6c5ce7;
-    --accent-color: #00cec9;
-    --bg-dark: #0f172a;
-    --bg-darker: #0b1120;
-    --card-bg: rgba(255, 255, 255, .08);
-    --text-color: #fff;
-    --text-muted: rgba(255, 255, 255, .75);
-    --border-color: rgba(255, 255, 255, .1);
+    color-scheme: dark;
+
+    --primary-color: #d4895f;
+    --accent-color: #e2a07a;
+    --on-primary: #161513;
+    --bg-dark: #1f1d1a;
+    --bg-darker: #161513;
+    --card-bg: #262420;
+    --text-color: #ece7dd;
+    --text-muted: #a39d91;
+    --border-color: #36332e;
+    --shadow: 0 20px 60px rgba(10, 9, 8, .6);
+}
+
+/* Licht: warm gebroken wit als papier, bijna-zwarte tekst en een donkerder koper.
+   Coolors-palet: https://coolors.co/f7f4ee-efe9df-1f1d1a-5c574e-9c4b26 */
+:root:has(#theme:checked) {
+    color-scheme: light;
+
+    --primary-color: #9c4b26;
+    --accent-color: #7f3d1f;
+    --on-primary: #f7f4ee;
+    --bg-dark: #efe9df;
+    --bg-darker: #f7f4ee;
+    --card-bg: #fdfbf7;
+    --text-color: #1f1d1a;
+    --text-muted: #5c574e;
+    --border-color: #ddd5c8;
+    --shadow: 0 20px 60px rgba(31, 29, 26, .15);
 }
 
 /* Pagina en bediening */
@@ -29,12 +52,14 @@ body {
     max-width: 900px;
 }
 
-#motion {
+#motion,
+#theme {
     margin-right: 6px;
     accent-color: var(--accent-color);
 }
 
 label {
+    margin-right: 16px;
     font-size: .85rem;
     cursor: pointer;
 }
@@ -50,7 +75,7 @@ input:focus-visible {
     overflow: hidden;
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    box-shadow: 0 20px 60px #0005;
+    box-shadow: var(--shadow);
 }
 
 .browser-bar {
