@@ -16,7 +16,7 @@ A responsive browser mockup featuring a CSS-animated cursor and a scrolling scre
 - A simulated cursor click followed by a scrolling page preview.
 - A six-second animation loop.
 - A checkbox to turn the animation on or off.
-- A checkbox to switch between the dark and light theme.
+- A checkbox to switch between the dark and light theme. The page starts dark, or light when the URL ends in `#licht`, so my portfolio can open it in the visitor's theme.
 - A scalable SVG illustration that fits smaller screens.
 - Support for the system's reduced-motion preference.
 - No JavaScript.

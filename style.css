@@ -17,8 +17,12 @@
 }
 
 /* Licht: warm gebroken wit als papier, bijna-zwarte tekst en een donkerder koper.
-   Coolors-palet: https://coolors.co/f7f4ee-efe9df-1f1d1a-5c574e-9c4b26 */
-:root:has(#theme:checked) {
+   Coolors-palet: https://coolors.co/f7f4ee-efe9df-1f1d1a-5c574e-9c4b26
+   Zonder #licht in de URL start de pagina donker, met #licht licht (zo opent mijn
+   portfolio de mock-up in het thema van de bezoeker). Het vinkje wisselt telkens
+   naar het andere thema. */
+:root:has(#licht:target):not(:has(#theme:checked)),
+:root:not(:has(#licht:target)):has(#theme:checked) {
     color-scheme: light;
 
     --primary-color: #9c4b26;
